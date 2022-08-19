@@ -2,6 +2,10 @@
     padding: 0px;
     margin: 0px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     text-align: right;
@@ -61,7 +65,11 @@ body {
     direction: ltr;
     text-align: left;
 }
-.about .btn{
+
+.about p {
+  font-size: 20px;
+}
+.about  .btn{
     color: #5f687b;
     margin-bottom: 30px;
     margin-left: 30px;
@@ -70,9 +78,12 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     border: 1px solid #cdd1d9;
-}
- .about .btn:hover{
     background-color: #01b8dc;
+    float: right;
+}
+
+ .about .btn:hover{
+    background-color: blue;
 }
 
 .itemHeader {
@@ -272,9 +283,16 @@ body {
   .social-links i:hover{
     background-color: #01b8dc;
   }
+  
   @media(max-width:600px){
     .about{
       direction: rtr;
       text-align: right;
   }
+
+  #footer .credits {
+    float: left;
+    font-size: 13px;
+  }
+
   }
